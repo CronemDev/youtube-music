@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.textHits{
+    display: none;
+}
+
+.square{
+    display: none;
+}
+
+
+
+
+#messageDisplay{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 1.25rem;
+}
+
+
+
+.nav-bar{
+display: none;
+  }
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  #messageDisplay{
+    display: none;
+  }
+  body {
+  margin: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(5, 49, 78, 0.8) 0%,    /* azul petróleo escuro */
+      rgba(1, 16, 59, 0.6) 50%,   /* mais escuro */
+      rgba(0, 0, 0, 0.9) 100%     /* preto total */
+    );
+  background-color: #000; /* fallback */
+  background-repeat: no-repeat;
+  background-size: 100% 250px; /* altura do degradê */
+  color: #e5e5e5;
+}
+
+.arrowContainer {
+    display: flex;
+    align-items: center; 
+    gap: 7px;
+    justify-content: end;
+    color: #ffffffa6;
+
+}
+
+
+
+.more{
+    color: #ffffffe1;
+    font-size: 0.7rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translate(-10%, 13%);
+    border: 1px solid #ffffffa6;
+    
+}
+
+
+.more:hover{
+    background-color: #ffffff34;;
+}
+
+.arrowContainer svg {
+    width: 25px;  
+    height: 25px; 
+    cursor: pointer; 
+}
+
+
+  .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 25px;
+    
+  }
+  .nav-bar svg {
+  position: relative;
+  top: 3px;}
+
+
+  .nav-bar img{
+    width: 75px;
+  }
+
+  .topics{
+      display: flex;
+  flex-wrap: nowrap;
+  gap: 10px; 
+  justify-content: center;
+  margin-top: 50px;
+
+  }
+
+.square {
+  background-color: rgba(255, 255, 255, 0.08); /* cinza translúcido */
+  backdrop-filter: blur(800px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 85px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+display: flex;
+justify-content: center;
+font-family: Montserrat, sans-serif;
+font-size: 13px;
+align-items: center;
+    
+}
+
+.square:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: pointer; 
+}
+
+
+.textHits{
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    margin: 35px 20px;
+    display: block;
+}
+
+.textHits p{
+    margin: 0 0 10px;
+}
+
+.hitsRow{
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.hitsRow img{
+    width: 145px;
+}
+
+.title {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 6px;  /* espaço após a imagem */
+  margin-bottom: 2px; /* espaço pequeno antes do subtítulo */
+}
+
+.subtitle {
+  color: gray;
+  font-size: 13px;
+}
+
+
+
+}
+@media screen and (max-width: 480px) {
+  /* CSS para celulares pequenos */
+}
